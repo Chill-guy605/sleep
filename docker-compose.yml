@@ -1,5 +1,7 @@
 services:
   app:
+    image: myapp_image
+    container_name: my_app
     environment:
       - DB_HOST=localhost      # Здесь указываем хост базы данных
       - DB_PORT=5432          # Порт базы данных
