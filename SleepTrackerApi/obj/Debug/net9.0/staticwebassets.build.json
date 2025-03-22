@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "L6cZrT3fURzA6C4hyI8HzFtD907rSavgZurl8VGrhlI=",
+  "Source": "SleepTrackerApi",
+  "BasePath": "_content/SleepTrackerApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
