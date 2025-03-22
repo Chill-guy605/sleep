@@ -1,22 +1,14 @@
 services:
-  db:
-    image: postgres:13
-    container_name: my_db
-    environment:
-      - POSTGRES_PASSWORD=mysecretpassword
-    volumes:
-      - sleepdb_data:/var/lib/postgresql/data
-    ports:
-      - "5432:5432"
-  
   app:
     image: myapp_image
     container_name: my_app
-    depends_on:
-      - db
+    environment:
+      - DB_HOST=localhost      # Здесь указываем хост базы данных
+      - DB_PORT=5432          # Порт базы данных
+      - DB_USER=postgres     # Имя пользователя базы данных
+      - DB_PASSWORD=123  # Пароль пользователя базы данных
+      - DB_NAME=sleepdb  # Имя базы данных
     ports:
       - "8080:8080"
-
-# Определение тома sleepdb_data
-volumes:
-  sleepdb_data:
+    depends_on:
+      - db  # Убираем, так как база данных больше не в контейнере
