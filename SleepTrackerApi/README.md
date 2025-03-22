@@ -1,1 +1,2 @@
-echo "# SleepTrackerApi" >> README.md
+git add README.md
+
