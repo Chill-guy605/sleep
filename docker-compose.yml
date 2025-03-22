@@ -1,6 +1,6 @@
 services:
   app:
-    image: myapp_image
+    image: postgres
     container_name: my_app
     environment:
       - DB_HOST=localhost      # Здесь указываем хост базы данных
