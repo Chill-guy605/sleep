@@ -1,13 +1,30 @@
 services:
-  app:
+  my_app:  # База данных PostgreSQL
     image: postgres
     container_name: my_app
     environment:
-      - DB_HOST=localhost      # Здесь указываем хост базы данных
-      - DB_PORT=5432          # Порт базы данных
-      - DB_USER=postgres     # Имя пользователя базы данных
-      - DB_PASSWORD=123  # Пароль пользователя базы данных
-      - DB_NAME=sleepdb  # Имя базы данных
+      - POSTGRES_DB=sleepdb
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=123
     ports:
-      - "8080:8080"
-    
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  backend:  # Бэкенд-приложение
+    image: sleep
+    build:
+      context: ./SleepTrackerApi
+    depends_on:
+      - my_app  # Теперь правильно указываем зависимость от базы
+    environment:
+      - DB_HOST=my_app  # Указываем контейнер базы вместо "localhost"
+      - DB_PORT=5432
+      - DB_USER=postgres
+      - DB_PASSWORD=123
+      - DB_NAME=sleepdb
+    ports:
+      - "8081:8080"  # Изменил порт хоста, чтобы избежать конфликта
+
+volumes:
+  db_data:
