@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ez0v6HA+Dfw=",
+  "dgSpecHash": "VtvVe0CnAcg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Павел\\Desktop\\backend\\SleepTrackerApi\\SleepTrackerApi.csproj",
+  "projectFilePath": "C:\\Program Files\\project\\backend\\SleepTrackerApi\\SleepTrackerApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Павел\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Павел\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\9.0.3\\microsoft.aspnetcore.authentication.jwtbearer.9.0.3.nupkg.sha512",

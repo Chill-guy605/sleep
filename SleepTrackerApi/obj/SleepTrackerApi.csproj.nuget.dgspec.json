@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Павел\\Desktop\\backend\\SleepTrackerApi\\SleepTrackerApi.csproj": {}
+    "C:\\Program Files\\project\\backend\\SleepTrackerApi\\SleepTrackerApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Павел\\Desktop\\backend\\SleepTrackerApi\\SleepTrackerApi.csproj": {
+    "C:\\Program Files\\project\\backend\\SleepTrackerApi\\SleepTrackerApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Павел\\Desktop\\backend\\SleepTrackerApi\\SleepTrackerApi.csproj",
+        "projectUniqueName": "C:\\Program Files\\project\\backend\\SleepTrackerApi\\SleepTrackerApi.csproj",
         "projectName": "SleepTrackerApi",
-        "projectPath": "C:\\Users\\Павел\\Desktop\\backend\\SleepTrackerApi\\SleepTrackerApi.csproj",
+        "projectPath": "C:\\Program Files\\project\\backend\\SleepTrackerApi\\SleepTrackerApi.csproj",
         "packagesPath": "C:\\Users\\Павел\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Павел\\Desktop\\backend\\SleepTrackerApi\\obj\\",
+        "outputPath": "C:\\Program Files\\project\\backend\\SleepTrackerApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Павел\\AppData\\Roaming\\NuGet\\NuGet.Config"

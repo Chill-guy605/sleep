@@ -9,7 +9,7 @@ FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 
 # Копируем проектный файл
-COPY SleepTrackerApi/SleepTrackerApi.csproj SleepTrackerApi/
+COPY ./SleepTrackerApi/SleepTrackerApi.csproj ./SleepTrackerApi/
 
 # Восстанавливаем зависимости
 RUN dotnet restore "SleepTrackerApi/SleepTrackerApi.csproj"
